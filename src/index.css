@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+  --radius-xl: calc(var(--radius) + 8px);
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'DM Serif Display', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --background: #f5f7f5;
+  --foreground: #0d1f0f;
+  --card: #ffffff;
+  --card-foreground: #0d1f0f;
+  --primary: #16a34a;
+  --primary-foreground: #ffffff;
+  --secondary: #dcfce7;
+  --secondary-foreground: #14532d;
+  --muted: #f0f4f0;
+  --muted-foreground: #6b7f6d;
+  --accent: #059669;
+  --accent-foreground: #ffffff;
+  --border: #e2eae2;
+  --ring: #16a34a;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c8d5c8;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8bfa8;
+}
+
+.font-display {
+  font-family: 'DM Serif Display', serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+.recharts-surface {
+  overflow: visible;
+}

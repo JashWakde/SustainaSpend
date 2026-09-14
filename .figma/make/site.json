@@ -1,0 +1,10 @@
+{
+  "description": "SustainaSpend empowers students and young adults to manage their finances sustainably by tracking income, expenses, and projections without bank connections.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
